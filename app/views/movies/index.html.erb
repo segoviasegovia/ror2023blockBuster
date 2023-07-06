@@ -4,7 +4,7 @@
   <h1>Movies</h1>
   <%= link_to "New movie", new_movie_path %>
   <div id="movies">
-    <div class="row">
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
       <% @movies.each do |movie| %>
         <%= render movie %>
       <% end %>
